@@ -1,0 +1,100 @@
+.d-flex {
+    display: flex !important;
+}
+.d-block {
+    display: block !important;
+}
+.d-inline {
+    display: inline !important;
+}
+.d-inline-block {
+    display: inline-block !important;
+}
+.d-none {
+    display: none !important;
+}
+
+.v-visible {
+    visibility: visible !important;
+}
+.v-hidden {
+    visibility: hidden !important;
+}
+
+.p-relative {
+    position: relative !important;
+}
+.p-absolute {
+    position: absolute !important;
+}
+.p-static {
+    position: static !important;
+}
+.p-fixed {
+    position: fixed !important;
+}
+.o-visible {
+    overflow: visible !important;
+}
+.o-hidden {
+    overflow: hidden !important;
+}
+
+.content-row-start {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+}
+.content-row-center {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.content-row-end {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+}
+.content-column-start {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+}
+.content-column-center {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.content-column-end {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+}
+.content-align-start {
+    align-items: flex-start !important;
+}
+.content-align-center {
+    align-items: center !important;
+}
+.content-align-end {
+    align-items: flex-end !important;
+}
+
+.self-start {
+    margin-left: 0;
+    margin-right: auto !important;
+}
+.self-center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.self-end {
+    margin-left: auto !important;
+    margin-right: 0;
+}

@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Oswald ExtraLight';
+    src: url('../font/Oswald-ExtraLight.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Oswald Light';
+    src: url('../font/Oswald-Light.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Oswald Regular';
+    src: url('../font/Oswald-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Oswald Medium';
+    src: url('../font/Oswald-Medium.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Oswald Bold';
+    src: url('../font/Oswald-Bold.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Oswald Bold';
+    src: url('../font/Oswald-Bold.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('../font/Poppins-Light.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../font/Poppins-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../font/Poppins-Medium.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../font/Poppins-Bold.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url('../font/Poppins-Black.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Poppins-Thin';
+    src: url('../font/Poppins-Thin.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
