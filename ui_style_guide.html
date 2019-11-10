@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI Style Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            padding: 15px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: flex-start;
+
+            background: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <button class="ui-btn btn-sm">+</button>
+        <br>
+        <button class="ui-btn btn-sm btn-transparent ">+</button>
+        <br>
+        <button class="ui-btn btn-md">More Info</button>
+        <br>
+        <button class="ui-btn btn-md btn-transparent ">More Info</button>
+        <br>
+        <button class="ui-btn btn-lg">More Info</button>
+        <br>
+        <button class="ui-btn btn-lg btn-transparent ">More Info</button>
+        <br>
+        <button class="ui-btn btn-xl">More Info</button>
+        <br>
+        <button class="ui-btn btn-xl btn-blue ">More Info</button>
+        <br>
+        <button class="ui-btn-load">load more</button>
+    </div>
+    <br>
+    <div class="services">
+        <div style="width: 375px;" class="ui-service-block">
+            <img class="ui-service-block-icon" src="./assets/icon/shipping.png" alt="">
+            <label class="ui-service-block-heading">24/7 technical support</label>
+            <small class="ui-service-block-description">Proin hendrerit suscipit justo, luctus volutpat leo sollicitudin ac. </small>
+            <a href="#" class="ui-service-block-hyperlink">More Info</a>
+        </div>
+    </div>
+    <br>
+    <div class="timers">
+        <ul class="ui-timer">
+            <li class="ui-timer-segment">
+                <label class="ui-timer-value">01</label>
+                <small class="ui-timer-name">day</small>
+            </li>
+            <li class="ui-timer-segment">
+                <label class="ui-timer-value">23</label>
+                <small class="ui-timer-name">hours</small>
+            </li>
+            <li class="ui-timer-segment">
+                <label class="ui-timer-value">55</label>
+                <small class="ui-timer-name">mins</small>
+            </li>
+            <li class="ui-timer-segment">
+                <label class="ui-timer-value">32</label>
+                <small class="ui-timer-name">secs</small>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <div class="products">
+        <div class="ui-product-category">
+            <img class="ui-product-category-icon" src="./assets/icon/popular.png" alt="">
+            <label class="ui-product-category-heading">popular products</label>
+            <small class="ui-product-category-description">Proin hendrerit suscipit justo</small>
+            <a href="#" class="ui-product-category-hyperlink">more products</a>
+        </div>
+        <br>
+        <div class="ui-product">
+            <div class="ui-product-thumbnail"></div>
+            <label class="ui-product-title">kd 8 xt</label>
+            <label class="ui-product-price">$145.00 <sup>$199.99</sup></label>
+            <label class="ui-product-badge">-25%</label>
+
+            <div class="ui-product-action">
+                <button class="ui-product-action-buy ui-btn btn-md">
+                    <img src="./assets/icon/buy.png" alt="">
+                    <label>Buy</label>
+                </button>
+                <button class="ui-btn btn-sm btn-transparent ui-product-action-compare">
+                    <img src="./assets/icon/compare.png" alt="">
+                </button>
+                <button class="ui-btn btn-sm btn-transparent ui-product-action-wishlist">
+                    <img src="./assets/icon/wishlist.png" alt="">
+                </button>
+            </div>
+        </div>
+        <br>
+        <div class="ui-product-banner">
+            <label class="ui-product-banner-badge">new</label>
+            <a class="ui-product-banner-category">lifestyle</a>
+            <label class="ui-product-banner-title">WATERFLY: Running Shoes</label>
+            <button class="ui-product-banner-button ui-btn btn-lg btn-transparent ">More Info</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,1 +1,1 @@
-"# ecommerce-frontend" 
+"Some ecommerce project"
