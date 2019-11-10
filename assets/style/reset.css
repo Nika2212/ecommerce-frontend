@@ -13,6 +13,9 @@ body {
 
     box-sizing: border-box;
 }
+body * {
+    flex-shrink: 0;
+}
 main {
     display: block;
 }
