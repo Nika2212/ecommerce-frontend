@@ -401,6 +401,8 @@
 
     cursor: pointer;
 
+    transition: color 120ms ease-out;
+
     z-index: 1;
 }
 .ui-product .ui-product-price {
@@ -415,11 +417,15 @@
 
     overflow: hidden;
 
+    transition: color 120ms ease-out;
+
     z-index: 1;
 }
 .ui-product .ui-product-price sup {
     color: #888888;
     text-decoration: line-through;
+
+    transition: color 120ms ease-out;
 }
 .ui-product .ui-product-badge {
     position: absolute;
@@ -453,18 +459,39 @@
 
     background-color: rgba(58, 84, 214, 0.95);
 
-    display: none;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    opacity: 0;
+
+    will-change: opacity;
+
+    transition: opacity 180ms ease-out;
 }
 .ui-product .ui-product-action .ui-product-action-buy {
     margin-right: 35px;
+
+    transform: translateY(15px);
+    opacity: 0;
+
+    transition: all 120ms ease-out 30ms;
 }
 .ui-product .ui-product-action .ui-product-action-compare {
     margin-right: 10px;
+
+    transform: translateY(15px);
+    opacity: 0;
+
+    transition: all 120ms ease-out 60ms;
 }
-.ui-product .ui-product-action .ui-product-action-wishlist {}
+.ui-product .ui-product-action .ui-product-action-wishlist {
+    transform: translateY(15px);
+    opacity: 0;
+
+    transition: all 120ms ease-out 90ms;
+}
 .ui-product:hover {
     box-shadow: 0 0 40px rgba(29, 52, 166, 0.50);
 
@@ -480,7 +507,28 @@
     color: #f8f8f8;
 }
 .ui-product:hover .ui-product-action {
-    display: flex;
+    opacity: 1;
+}
+.ui-product:hover .ui-product-action .ui-product-action-buy {
+    transform: translateY(0);
+    opacity: 1;
+}
+.ui-product:hover .ui-product-action .ui-product-action-buy:hover {
+    transform: translateY(-5px);
+}
+.ui-product:hover .ui-product-action .ui-product-action-compare {
+    transform: translateY(0);
+    opacity: 1;
+}
+.ui-product:hover .ui-product-action .ui-product-action-compare:hover {
+    transform: translateY(-5px);
+}
+.ui-product:hover .ui-product-action .ui-product-action-wishlist {
+    transform: translateY(0);
+    opacity: 1;
+}
+.ui-product:hover .ui-product-action .ui-product-action-wishlist:hover {
+    transform: translateY(-5px);
 }
 .ui-product-banner {
     padding: 60px;
