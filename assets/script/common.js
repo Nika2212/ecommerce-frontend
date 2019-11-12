@@ -31,7 +31,6 @@ class DropdownModule {
             try {
                 this.dropdownTargetReference = document.getElementById(this.config.targetID);
                 this.dropdownChildReference = document.getElementById(this.config.childID);
-                if (!this.dropdownTargetReference || !this.dropdownChildReference) throw new Error();
                 this.__handleEvents();
             } catch (error) {
                 console.error("FATAL ERROR: Can't get DOM References");
