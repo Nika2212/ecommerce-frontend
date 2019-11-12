@@ -31,16 +31,17 @@ class DropdownModule {
             try {
                 this.dropdownTargetReference = document.getElementById(this.config.targetID);
                 this.dropdownChildReference = document.getElementById(this.config.childID);
-                this.__handleEvents();
-            } catch (error) {
+                if (!this.dropdownTargetReference || !this.dropdownChildReference) throw new Error;
+            } catch {
                 console.error("FATAL ERROR: Can't get DOM References");
+                return;
             }
+            this.__handleEvents();
         }
     };
     __handleEvents = () => {
         this.eventHandler = this.__onBlur.bind(this);
         this.dropdownTargetReference.addEventListener('click', this.__onToggle.bind(this), true);
-        this.dropdownChildReference.addEventListener('click', (e) => e.stopPropagation(), true);
     };
     __onToggle = () => {
         if (this.dropdownChildReference.className.search('d-none') > -1) {
@@ -56,4 +57,4 @@ class DropdownModule {
     };
 }
 
-const sampleDropdown = new DropdownModule({targetID : 'target-id', childID : 'child-id', className : 'expanded'});
+const sampleDropdown = new DropdownModule({targetID : 'tsarget-id', childID : 'child-id', className : 'expanded'});
