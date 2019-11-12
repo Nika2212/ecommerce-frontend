@@ -371,6 +371,8 @@
 
     background-color: #ffffff;
 
+    transition: box-shadow 120ms ease-out;
+
     z-index: 0;
 }
 .ui-product .ui-product-thumbnail {
@@ -470,6 +472,22 @@
 
     transition: opacity 180ms ease-out;
 }
+.ui-product .ui-product-action .ui-product-action-category {
+    position: absolute;
+
+    left: 50px;
+    top: 50px;
+
+    font-family: 'Oswald Light', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    transform: translateY(15px);
+    opacity: 0;
+
+    transition: all 120ms ease-out 30ms;
+}
 .ui-product .ui-product-action .ui-product-action-buy {
     margin-right: 35px;
 
@@ -509,26 +527,21 @@
 .ui-product:hover .ui-product-action {
     opacity: 1;
 }
-.ui-product:hover .ui-product-action .ui-product-action-buy {
+.ui-product:hover .ui-product-action .ui-product-action-category {
     transform: translateY(0);
     opacity: 1;
 }
-.ui-product:hover .ui-product-action .ui-product-action-buy:hover {
-    transform: translateY(-5px);
+.ui-product:hover .ui-product-action .ui-product-action-buy {
+    transform: translateY(0);
+    opacity: 1;
 }
 .ui-product:hover .ui-product-action .ui-product-action-compare {
     transform: translateY(0);
     opacity: 1;
 }
-.ui-product:hover .ui-product-action .ui-product-action-compare:hover {
-    transform: translateY(-5px);
-}
 .ui-product:hover .ui-product-action .ui-product-action-wishlist {
     transform: translateY(0);
     opacity: 1;
-}
-.ui-product:hover .ui-product-action .ui-product-action-wishlist:hover {
-    transform: translateY(-5px);
 }
 .ui-product-banner {
     padding: 60px;
@@ -717,10 +730,6 @@
 
     cursor: pointer;
 }
-.ui-header .ui-header-main .ui-header-main-account img {
-    max-width: 18px;
-    max-height: 18px;
-}
 .ui-header .ui-header-main .ui-header-main-wishlist {
     width: 75px;
     height: 75px;
@@ -732,10 +741,6 @@
     border-left: 1px solid rgba(255, 255, 255, 0.25);
 
     cursor: pointer;
-}
-.ui-header .ui-header-main .ui-header-main-wishlist img {
-    max-width: 18px;
-    max-height: 18px;
 }
 .ui-header .ui-header-cart {
     margin-left: auto;
@@ -751,8 +756,4 @@
     border-left: 1px solid rgba(255, 255, 255, 0.25);
 
     cursor: pointer;
-}
-.ui-header .ui-header-cart img {
-    max-width: 18px;
-    max-height: 18px;
 }
