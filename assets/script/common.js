@@ -14,6 +14,7 @@ class DropdownModule {
 
         this.__validateInputs();
     }
+
     expand = () => {
         this.dropdownChildReference.classList.remove('d-none');
         this.dropdownTargetReference.classList.add('expanded');
@@ -24,6 +25,7 @@ class DropdownModule {
         this.dropdownTargetReference.classList.remove('expanded');
         document.body.removeEventListener('click', this.eventHandler, true);
     };
+
     __validateInputs = () => {
         if (Object.keys(this.config).length < 2) {
             console.error('FATAL ERROR: Config object requires at least 2 properties [string targetID, string childID]');
@@ -56,5 +58,3 @@ class DropdownModule {
         }
     };
 }
-
-const sampleDropdown = new DropdownModule({targetID : 'tsarget-id', childID : 'child-id', className : 'expanded'});
